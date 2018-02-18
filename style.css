@@ -56,14 +56,27 @@ a{
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color:black;
+}
+/*colorful backgrounds*/
+.Neapolitan {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, lightblue 0%, lightblue 69%, gray 69%, gray 97%, orange 97%, orange 100%);
 }
 
 
 /* you can structure your code's white space so that it is as readable for when you come back in the future or for other people to read and edit quickly */
-
 body{
-    font-family: arial; font-size: 100%; line-height: 1.2em; width: 100%; margin: 0;
+    font-family: arial; font-size: 100%; line-height: 1.2em; width: 100%; margin: 0
 }
+/*for other body*/
+body2{
+    font-family: arial; font-size: 100%; line-height: 1.2em; width: 100%; margin: 0; background-color: lightgray;
+}
+
+
+
 
 /* you can put your code all in one line like above */
 #page{ margin: 20px; }
@@ -76,28 +89,7 @@ body{
 	display: inline-block;
 }
 /* but try and be as concise as possible */
-#nav{
-	width: 60%;
-	display: inline-block;
-	text-align: right;
-	float: right;
-}
-	#nav ul{}
-		#nav ul li{
-			display: inline-block;
-			height: 62px;
-		}
-			#nav ul li a{
-				padding: 20px;
-				background-color: :#fdfd96;
-				color: black;
-			}
-			#nav ul li a:hover{
-				background-color: #ffb428px 0;
-	background: blue;
-	padding: 20px;
-	clear: both;
-}
+
 #footer{
 	border-bottom: 1px #ccc solid;
 	margin-bottom: 10px;
@@ -110,5 +102,24 @@ body{
 	}
 
 /* multiple styles seperated by a , */
+/*this is for two column*/
 #content,
 ul li a{ box-shadow: 0px 1px 1px #999; }
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*straight to make it look alignedtext alignment*/
+div-text-align {
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    text-align: justify;
+}
